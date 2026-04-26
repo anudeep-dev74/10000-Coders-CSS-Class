@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <style>
+        /* .main-1 > h3 {  
+            color: orange;
+        }
+        .sub-1 > h3,.lang {
+            color: lightgreen;
+        } */
+
+        /* .main-1 .lang,h1,h3 {
+            color: lightseagreen;
+        } */
+
+        /* .main-1 *{
+            color: blanchedalmond;
+        } */
+
+        /* p+h1{
+            color: orchid;
+        } */
+
+        /* .sub-1 > h3+p {
+            color: aqua;
+        } */
+
+        /* .main-1 > .sub-1 > h3+p {
+            color: brown;
+        } */
+
+        /* .main-1>h1+.sub-1>h3+p {
+            color: wheat;
+        } */
+
+        /* .main-1 ~ h3,p{
+            color: blueviolet;
+        } */
+
+        .main-1 > h3{
+            color: palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-1">
+        <p>Maths</p>
+        <h1>English</h1>
+        <div class="sub-1">
+            <h3>Telugu</h3>
+            <p class="lang">Social</p>
+        </div>
+        <h3>Science</h3>
+    </div>
+    <h1>Python</h1>
+    <h3>CSS</h3>
+    <div class="main-2">
+        <p>Java</p>
+        <h3>HTML</h3>
+    </div>
+</body>
+</html>
