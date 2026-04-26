@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <style>
+        /* Child Selector
+        .main > *{
+            color: aquamarine;
+        } */
+
+        /* .main > .child h1{
+            color: blue;
+        }
+
+        body > h4{
+            color: salmon;
+        } */
+
+
+        /* Descendent Selector
+        .main h1{
+            color: lightgreen;
+        }
+        .main p{
+            color: lightblue;
+        }
+
+        .main div p{
+            background-color: blanchedalmond;
+        }
+
+        .main #aa{
+            text-decoration: underline;
+        } */
+
+        /* Adjacent Selector
+        p + .child {
+            background-color: paleturquoise;
+        }
+
+        h2 + p + h4{
+            color: mediumaquamarine;
+        }
+
+        .main + h4 {
+            text-transform: capitalize;
+        } */
+
+        /*General Siblings*/
+
+        .child ~ p{
+            color: aquamarine;
+        }
+
+        .main ~ h4{
+            background-color: magenta;
+        }
+
+        .main ~ .main1{
+            border: 2px solid mediumslateblue;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>85r students</p>
+        <p>brave students</p>
+        <div class="child">
+            <p>lazy fellows</p>
+            <h1>Talented</h1>
+        </div>
+        <h2>Mirchi Bajji</h2>
+        <p>chai</p>
+        <h4 id="aa">samosa</h4>
+    </div>
+    <h4>pav baji</h4>
+    <div class="main1">
+        <p>pani puri</p>
+    </div>
+</body>
+</html>
